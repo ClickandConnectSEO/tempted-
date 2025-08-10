@@ -1,16 +1,14 @@
 {
-  "cli": {
-    "version": ">= 8.0.0"
-  },
+  "cli": { "version": ">= 8.0.0" },
   "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": { "buildType": "apk" }
+    },
     "production": {
-      "android": {
-        "buildType": "app-bundle"
-      },
-      "env": {
-        "RC_PUBLIC_SDK_KEY": "replace_me",
-        "TEMPTED_ENV": "production"
-      }
+      "android": { "buildType": "app-bundle" }
     }
-  }
+  },
+  "submit": { "production": {} }
 }
