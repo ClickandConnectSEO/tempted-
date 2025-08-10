@@ -1,0 +1,19 @@
+name: Android Dev Build (Expo)
+on:
+  workflow_dispatch: {}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm i -g eas-cli
+      - name: Start Android dev build
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+          EAS_PROJECT_ID: ${{ secrets.EAS_PROJECT_ID }}
+        run: |
+          echo "Using EAS project $EAS_PROJECT_ID"
+          eas build --platform android --profile development --non-interactive
