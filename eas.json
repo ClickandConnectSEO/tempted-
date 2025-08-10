@@ -1,0 +1,16 @@
+{
+  "cli": {
+    "version": ">= 8.0.0"
+  },
+  "build": {
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "RC_PUBLIC_SDK_KEY": "replace_me",
+        "TEMPTED_ENV": "production"
+      }
+    }
+  }
+}
