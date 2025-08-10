@@ -8,6 +8,11 @@
     "icon": "./assets/icon.png",
     "splash": { "image": "./assets/splash.png", "resizeMode": "contain", "backgroundColor": "#0b0b0b" },
     "android": { "package": "com.clickandconnectseo.tempted", "versionCode": 1 },
-    "plugins": ["expo-dev-client"]
+    "plugins": ["expo-dev-client"],
+    "extra": {
+      "eas": {
+        "projectId": "41747bc3-8376-410b-98e0-c2e7b3e41acc"
+      }
+    }
   }
 }
