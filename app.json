@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Tempted",
-    "slug": "connect-a-repository"
+    "slug": "connect-a-repository",
     "scheme": "tempted",
     "version": "1.0.0",
     "orientation": "portrait",
